@@ -1,28 +1,15 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
   theme: {
     extend: {
       colors: {
-        brand: {
-          black: "#0a0a0a",
-          darkGrey: "#141414",
-          red: "#E50914",
-        },
+        'cr-orange': '#F47521',
+        'cr-black': '#000000',
+        'cr-anthracite': '#23252B',
+        'cr-grey': '#A0A0A0',
       },
-      animation: {
-        'shimmer': 'shimmer 2s linear infinite',
-      },
-      keyframes: {
-        shimmer: {
-          '0%': { backgroundPosition: '-200% 0' },
-          '100%': { backgroundPosition: '200% 0' },
-        },
+      aspectRatio: {
+        'poster': '2 / 3',
       },
     },
   },
-  plugins: [],
 }
