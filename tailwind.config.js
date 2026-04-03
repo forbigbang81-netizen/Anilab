@@ -1,6 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
+      // ADD THESE TWO BLOCKS BELOW
       colors: {
         'cr-orange': '#F47521',
         'cr-black': '#000000',
@@ -12,4 +17,5 @@ module.exports = {
       },
     },
   },
+  plugins: [],
 }
